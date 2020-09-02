@@ -16,8 +16,7 @@ resource "aws_ssm_patch_baseline" "patch_security_baseline" {
     compliance_level   = "HIGH"
     patch_filter {
       key    = "SEVERITY"
-      values = ["Low", "Important", "Moderate"]
+      values = ["Low", "Important", "Medium"]
     }
   }
 }
-

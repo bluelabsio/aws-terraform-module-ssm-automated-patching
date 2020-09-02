@@ -16,8 +16,8 @@ Requires `aws` provider >= 2.25.0
 Include this repository as a module in your existing terraform code:
 ```hcl
 module "session-manager" {
-  source = "git::ssh://git@github.com/osodevops/aws-terraform-module-ssm-automated-patching.git.git"
   
+  source = "git::ssh://git@github.com/osodevops/aws-terraform-module-ssm-automated-patching.git"
   application_tag_name         = var.application_tag_name
   ssm_patching_logs_bucket     = var.ssm_patching_logs_bucket
   patching_name                = var.patching_name
